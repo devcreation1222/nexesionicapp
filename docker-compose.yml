@@ -1,0 +1,7 @@
+app:
+    build: .
+    command: ionic serve
+    ports:
+        - "8100:8100"
+        - "35729:35729"
+

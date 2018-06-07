@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{ 'ABOUT' | translate:param }}</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar class="location-name" no-border-top>
+        <ion-buttons left>
+            <button ion-button icon-only (click)="buttonLeftClick()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-segment class="location-name" style="width:80%; margin-left:10%;">
+            <h2>{{activeLocation.name}}</h2>
+        </ion-segment>
+
+        <ion-buttons right>
+            <button ion-button icon-only (click)="buttonRightClick()">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!--map-->
+    <div id="map" data-tap-disabled="true" class="item " [hidden]="!online"></div>
+    <!--location-->
+    <ion-item-divider [hidden]="hide">
+        <h2>
+            {{ 'LOCATION' | translate:param }}
+        </h2>
+    </ion-item-divider>
+    <ion-item [hidden]="hide">
+        <ion-icon name="pin" item-left large></ion-icon>
+        <h2>{{activeLocation.name}}</h2>
+        <p>{{activeLocation.address}}</p>
+    </ion-item>
+
+    <!--<ion-item-divider [hidden]="hide">
+        <h2>
+            Description
+        </h2>
+    </ion-item-divider>-->
+</ion-content>

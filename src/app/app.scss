@@ -1,0 +1,94 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: GEO415L;
+    src: url(../assets/fonts/GEO415L.ttf) format("opentype");
+}
+
+* {
+    font-family: 'GEO415L';
+}
+
+.centered {
+    text-align: center;
+}
+
+.item-divider ion-label {
+    color: map-get($colors, primary);
+    font-weight: bold;
+}
+
+ion-header {
+    .back-button-text {
+        display: none;
+    }
+    ion-icon {
+        color: #ffffff;
+    }
+    ion-buttons {
+        button {
+            background: transparent;
+            ion-icon {
+                font-size: 26px;
+            }
+        }
+    }
+    ion-navbar {
+        .toolbar-background {
+            background-color: #5f6367 !important;
+        }
+        .toolbar-title {
+            color: #fff;
+        }
+        ion-buttons {
+            button {
+                color: #fff
+            }
+        }
+    }
+    .toolbar-menu {
+        .toolbar-background {
+            background-color: #fff !important;
+        }
+    }
+    ion-toolbar {
+        ion-icon {
+            color: #5f6367;
+        }
+        .toolbar-content {
+            ion-segment {
+                .segment-activated {
+                    background-color: #5f6367 !important;
+                    color: #fff !important;
+                }
+                ;
+                ion-segment-button {
+                    border-color: #5f6367 !important;
+                    color: #5f6367 !important;
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    ion-badge {
+        background-color: #5f6367 !important;
+        position: absolute;
+        right: 20px;
+        color: #fff !important;
+    }
+}

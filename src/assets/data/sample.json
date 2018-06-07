@@ -1,0 +1,391 @@
+{"date": {
+        "end": "03/18/2018",
+        "start": "03/12/2018"
+    },
+    "location": {
+        "address": "Carrer la Volta, 3 Planta-1",
+        "lat": 41.5591726,
+        "lng": 2.2283395,
+        "name": "Nexes Pilates"
+    },
+    "name": "Nexes Més que pilates",
+    "schedule": [
+        {
+            "date": "03/05/2018",
+            "slots": [
+                {
+                    "sessions": [
+                        {
+                            "description": "Master Yoda introduces you to the initial steps as a Jedi, including balancing on one hand, elevating objects, and deciphering his speech.",
+                            "id": 7,
+                            "location": "Badalona",
+                            "speakers": [
+                                3
+                            ],
+                            "timeEnd": "9:00 AM",
+                            "timeStart": "8:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        },
+                        {
+                            "description": "Princess Leia will discuss the burdens and joys of authority and royal grace in a time of galactic turmoil and intrigue. She asks that no one use the phrase 'Well, EXCUSE me Princess'. ",
+                            "id": 9,
+                            "location": "Mollet del Vallès",
+                            "speakers": [
+                                4
+                            ],
+                            "timeEnd": "10:30 AM",
+                            "timeStart": "8:00 AM",
+                            "title": "Grupo 2",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "8:00 AM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Attendees are encouraged to also attend Pricess Leia's discussion 'Gender Roles in a Galactic Setting'. \n Master Windu discusses controversial racial topics including the average ear length of the Gungan, the avian or amphibian heritage of the Ishi Tib, and mysterious lack of information on the 'Yoda Species.'",
+                            "id": 5,
+                            "location": "Premià de Mar",
+                            "speakers": [
+                                2
+                            ],
+                            "timeEnd": "1:30 PM",
+                            "timeStart": "12:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "12:00 PM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Mr. Chewbaca's discussion will be interactive and participatory. He will discuss combat techniques and threat identification. Emergency medical personnel will be present during this... presentation.",
+                            "id": 1,
+                            "location": "Badalona",
+                            "speakers": [
+                                0
+                            ],
+                            "timeEnd": "3:00 PM",
+                            "timeStart": "2:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "2:00 PM"
+                }
+            ]
+        },
+        {
+            "date": "03/06/2018",
+            "slots": [
+                {
+                    "sessions": [
+                        {
+                            "description": "Master Yoda introduces you to the initial steps as a Jedi, including balancing on one hand, elevating objects, and deciphering his speech.",
+                            "id": 7,
+                            "location": "Badalona",
+                            "speakers": [
+                                3
+                            ],
+                            "timeEnd": "9:00 AM",
+                            "timeStart": "8:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        },
+                        {
+                            "description": "Princess Leia will discuss the burdens and joys of authority and royal grace in a time of galactic turmoil and intrigue. She asks that no one use the phrase 'Well, EXCUSE me Princess'. ",
+                            "id": 9,
+                            "location": "Badalona",
+                            "speakers": [
+                                4
+                            ],
+                            "timeEnd": "10:30 AM",
+                            "timeStart": "8:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "8:00 AM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Attendees are encouraged to also attend Pricess Leia's discussion 'Gender Roles in a Galactic Setting'. \n Master Windu discusses controversial racial topics including the average ear length of the Gungan, the avian or amphibian heritage of the Ishi Tib, and mysterious lack of information on the 'Yoda Species.'",
+                            "id": 5,
+                            "location": "Parets del Vallès",
+                            "speakers": [
+                                2
+                            ],
+                            "timeEnd": "1:30 PM",
+                            "timeStart": "12:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "12:00 PM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Mr. Chewbaca's discussion will be interactive and participatory. He will discuss combat techniques and threat identification. Emergency medical personnel will be present during this... presentation.",
+                            "id": 1,
+                            "location": "Badalona",
+                            "speakers": [
+                                0
+                            ],
+                            "timeEnd": "3:00 PM",
+                            "timeStart": "2:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "2:00 PM"
+                }
+            ]
+        },
+        {
+            "date": "03/07/2018",
+            "slots": [
+                {
+                    "sessions": [
+                        {
+                            "description": "Princess Leia summarizes the complexities of evolving gender issues for the Galactic Federation species. She delves into the unique challenges faced by races with 3+ genders and the cultural differences for mono-gender races. Attendees are encouraged to also attend Master Windu's discussion 'Race Issues in a Galactic Setting'.",
+                            "id": 10,
+                            "location": "Parets del Vallès",
+                            "speakers": [
+                                4
+                            ],
+                            "timeEnd": "9:30 AM",
+                            "timeStart": "8:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "8:00 AM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Captain Solo discusses his experience with aging and flight and provides advice on how to do both with grace",
+                            "id": 4,
+                            "location": "Badalona",
+                            "speakers": [
+                                1
+                            ],
+                            "timeEnd": "1:00 PM",
+                            "timeStart": "12:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "12:00 PM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Master Windu will illustrate how to balance power with confidence as he repeats his amazing lines like 'This Party's Over' and 'You are under arrest, my lord.'",
+                            "id": 6,
+                            "location": "Mollet del Vallès",
+                            "speakers": [
+                                2
+                            ],
+                            "timeEnd": "4:30 PM",
+                            "timeStart": "2:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "2:00 PM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Master Yoda provides an interactive discussion on reclusivity, meditation, and patience. This 5 hour session will begin a 2 minute introduction and about 5 hours of silently stacking round stones.... by yourself.",
+                            "id": 8,
+                            "location": "Badalona",
+                            "speakers": [
+                                3
+                            ],
+                            "timeEnd": "5:30 PM",
+                            "timeStart": "4:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "4:00 PM"
+                }
+            ]
+        },
+        {
+            "date": "03/08/2018",
+            "slots": [
+                {
+                    "sessions": [
+                        {
+                            "description": "Our highly successful and renown speakers take time to discuss lighter topics. They open up to our attendees by discussing their social delights, indulgences, and eccentricities in a galaxy of almost infinite pleasures.",
+                            "id": 11,
+                            "location": "Premià de Mar",
+                            "speakers": [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "timeEnd": "10:00 AM",
+                            "timeStart": "9:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "9:00 AM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Mr. Solo discusses what is needed to manage your own trade route: charm, phase blasters, a large and hairy co-pilot, and old ship, and disreputable 'partners'.",
+                            "id": 3,
+                            "location": "Premià de Mar",
+                            "speakers": [
+                                1
+                            ],
+                            "timeEnd": "11:30 AM",
+                            "timeStart": "11:00 AM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                2
+                            ]
+                        }
+                    ],
+                    "time": "11:00 AM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Mr. Chewbaca's talk will be extemporaneous. Guests are encouraged to bring notepads and phase blasters.",
+                            "id": 2,
+                            "location": "Premià de Mar",
+                            "speakers": [
+                                0
+                            ],
+                            "timeEnd": "1:30 PM",
+                            "timeStart": "1:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                3
+                            ]
+                        }
+                    ],
+                    "time": "1:00 PM"
+                },
+                {
+                    "sessions": [
+                        {
+                            "description": "Our speakers willingly debate galactically contentious issues around technology including Clone armies, regulations around Death Star proliferation, and cyborg-cyborg marriage petitions.",
+                            "id": 12,
+                            "location": "Badalona",
+                            "speakers": [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "timeEnd": "3:30 PM",
+                            "timeStart": "3:00 PM",
+                            "title": "Grupo 1",
+                            "tracks": [
+                                0
+                            ]
+                        }
+                    ],
+                    "time": "3:00 PM"
+                }
+            ]
+        }
+    ],
+    "speakers": [
+        {
+            "bio": "Mr. Chewbaca is a powerful ally to Captain Solo and is often referred to as the more charming of the two.",
+            "id": 0,
+            "image": "https://firebasestorage.googleapis.com/v0/b/ionic-2-event-app.appspot.com/o/images%2Fchewbacca.jpg?alt=media&token=5843938d-2ec4-4a7c-acf5-c043010e9d3e",
+            "name": "Chewie Chewbaca",
+            "title": "Engineer First Class, Ship's Mate of the Millennium Falcon"
+        },
+        {
+            "bio": "Captain Solo is an accomplished pilot and vital ally to the Jedi. His exploits are galaxy renown and his flight skills unparalleled.",
+            "id": 1,
+            "image": "https://firebasestorage.googleapis.com/v0/b/ionic-2-event-app.appspot.com/o/images%2Fhans.jpg?alt=media&token=78dd57b8-06a3-4eb9-9617-15528fd02880",
+            "name": "Hans Solo",
+            "title": "Trading Merchant, Alleged Smuggler, Captain of the Millennium Falcon"
+        },
+        {
+            "bio": "Princess Leia is a galactic figure with her powerful ancestry, royal authority, latent Jedi abilities, and nerd-catching good-looks.",
+            "id": 4,
+            "image": "https://firebasestorage.googleapis.com/v0/b/ionic-2-event-app.appspot.com/o/images%2Fleia.jpg?alt=media&token=d069ba29-e721-4b92-a2a7-3706dcf75e36",
+            "name": "Leia Organa",
+            "title": "Princess of Alderaan, Imperial Senator, General of Rebel Resistance, Chief of State of the New Republic"
+        },
+        {
+            "bio": "Mace Windu, 2nd to only Master Yoda on the Jedi Council, is an accomplished commander, Jedi, and smooth operator.",
+            "id": 2,
+            "image": "https://firebasestorage.googleapis.com/v0/b/ionic-2-event-app.appspot.com/o/images%2Fwindu.jpg?alt=media&token=7afb999b-860d-4446-851c-e1e1546750d7",
+            "name": "Master Mace Windu",
+            "title": "Jedi Master, Senior Jedi Councilor, Galactic Peace Officer"
+        },
+        {
+            "bio": "Master Yoda is a small, green Jedi Master. You know him, you love him, and you barely understand him.",
+            "id": 3,
+            "image": "https://firebasestorage.googleapis.com/v0/b/ionic-2-event-app.appspot.com/o/images%2Fyoda.jpg?alt=media&token=1c36ea79-1626-47be-8d14-defb95f6977a",
+            "name": "Master Yoda",
+            "title": "Jedi Master, Lead Jedi Councilor, Galactic Peace Officer"
+        }
+    ],
+    "tracks": [
+        {
+            "id": 0,
+            "name": "Mollet del Vallès"
+        },
+        {
+            "id": 1,
+            "name": "Premià de Mar"
+        },
+        {
+            "id": 2,
+            "name": "Parets del Vallès"
+        },
+        {
+            "id": 3,
+            "name": "Badalona"
+        }
+    ]
+}

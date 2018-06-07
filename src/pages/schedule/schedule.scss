@@ -1,0 +1,104 @@
+page-schedule {
+    .button-round {
+        padding: 0px;
+        border-radius: 100%;
+        margin: 0.5em 0.5em;
+        border: 1px solid map-get($colors, dark);
+        .button-inner {
+            padding: 1em;
+        }
+    }
+    .not-selected {
+        background-color: map-get($colors, light);
+        color: map-get($colors, dark);
+    }
+    .month.toolbar {
+        min-height: 20px;
+        text-align: center;
+        margin-top: 4px;
+    }
+    .days {
+        min-height: 70px;
+    }
+    .month .toolbar-background {
+        background: none;
+    }
+    .month .toolbar-title {
+        font-weight: normal;
+        font-size: small;
+    }
+    .label p,
+    .label h2 {
+        white-space: normal;
+    }
+    .segment .segment-button.segment-activated {
+        color: map-get($colors, light);
+        background-color: map-get($colors, primary);
+    }
+    .item-divider ion-label {
+        color: #5f6367 !important;
+    }
+    ion-toolbar {
+        ion-title {
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    .toolbar-ios.calendar {
+        min-height: 70px;
+    }
+    .toolbar-ios ion-title.calendar {
+        top: -20px;
+    }
+    .toolbar-ios .segment-ios.calendar {
+        top: 15px;
+    }
+    .bar-buttons-ios[left],
+    .bar-buttons-ios[right] {
+        padding-top: 15px;
+    }
+    .content-md>.scroll-content {
+        margin-top: 149px !important;
+    }
+    ion-item {
+      background-color: #f8f8f8;
+    }
+    ion-item.guest {
+      background-color: #c6ffb3;
+    }
+    ion-item.cancelled {
+      background-color: #ff9999;
+    }
+    ion-item.waiting {
+      background-color: #ffe0b3;
+    }
+    .circle-red {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #5f6367;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      background: red;
+    }
+
+    .circle-green {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #5f6367;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      background: green;
+    }
+}

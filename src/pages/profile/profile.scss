@@ -1,0 +1,21 @@
+page-profile-detail {
+    .profile-cover{
+        background-color:  map-get($colors, dark); 
+        color: #ffffff;
+    }
+    .item-divider h2{
+        color: #000;
+        font-weight: bold;
+    }
+    .about p, .profile h2{    
+        white-space: normal;
+    }
+    .profile-cover img{
+      max-width: 100px;
+       border-radius: 50%;
+    }
+    p{
+        white-space: normal;
+    }
+    
+}

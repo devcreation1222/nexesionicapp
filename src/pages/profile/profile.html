@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>{{ 'MY_PROFILE' | translate:param }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!--profile details-->
+    <div class="profile-cover centered" padding>
+        <!--<img src="{{profile.image}}" class="circle" [hidden]="!online"> -->
+        <!--img src="{{profile.image}}" class="circle" [hidden]="true"> -->
+        <img src="assets/images/stretching-exercises.png" width=250px height=250px class="circle">
+          <i class="fa fa-user"></i>
+    </div>
+    <ion-item-group class="about">
+        <ion-item-divider color="light" style="color:#000">
+            <h2 style="color:#000">{{ 'ABOUT_PROFILE' | translate:param }}</h2>
+        </ion-item-divider>
+        <ion-item>
+          <p>{{ 'NAME' | translate:param }}: {{profile.first}} {{profile.last}}</p>
+          <p>{{ 'EMAIL' | translate:param }}: {{profile.email}}</p>
+
+        </ion-item>
+    </ion-item-group>
+
+</ion-content>

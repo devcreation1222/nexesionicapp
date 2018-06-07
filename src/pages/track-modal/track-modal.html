@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{ 'LOCALIZATIONS' | translate:param }}</ion-title>
+        <ion-buttons end style="color:#fff">
+            <button style="color:#fff" ion-button (click)="filter($event)" strong>{{ "OK" | translate:param }}</button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="page-track-modal">
+    <!--list of tracks-->
+    <ion-list>
+        <ion-item *ngFor="let track of tracks">
+            <ion-label>{{track.name}} </ion-label>
+            <ion-toggle [(ngModel)]="track.show"></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>

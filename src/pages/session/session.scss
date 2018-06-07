@@ -1,0 +1,23 @@
+page-session {
+    .session-cover{
+        background-color:  map-get($colors, dark);
+        color: #ffffff;
+    }
+
+    .speakers{
+         p{
+            white-space: normal;
+         };
+         ion-label{
+             color: #000;
+             h2{
+                font-size: 20px;
+             }
+         };
+         .pilates-icon{
+           display: block;
+           object-fit: scale-down;
+           background-color: white;
+         }
+    }
+}

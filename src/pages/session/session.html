@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>{{ 'DETAILS' | translate:param }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!--desssion details-->
+    <div class="session-cover centered" padding>
+        <p></p>
+        <h2>{{session.title}}</h2>
+        <p>
+            <ion-icon name="calendar"></ion-icon> {{date | amDateFormat: 'DD-MM-YYYY HH:mm'}}
+        </p>
+        <p *ngIf=session.isGuest>
+          {{ 'CLASS_GUEST' | translate:param}}
+        </p>
+        <p *ngIf=session.isCancelled>
+          {{ 'CLASS_CANCELLED' | translate:param}}
+        </p>
+        <p *ngIf=session.isWaiting>
+          {{ 'CLASS_WAITING' | translate:param}}
+        </p>
+        <p>
+            <ion-icon name="pin"></ion-icon>
+            {{session.location.name}}
+        </p>
+    </div>
+    <div padding>{{session.title}}</div>
+
+    <!--speakers-->
+    <ion-item-group class="speakers">
+      <ion-item-divider color="light">
+        <h2>{{ 'TEACHERS' | translate:param }}</h2>
+      </ion-item-divider>
+
+        <!--<button ion-item *ngFor="let speaker of session.teachers" [navPush]="speakerDetailPage" [navParams]="{speaker: speaker}">-->
+      <ion-item *ngFor="let speaker of session.teachers">
+        <ion-avatar item-left [hidden]="!online">
+          <!--<img src="{{speaker.image}}">-->
+          <img src="assets/images/sports-pilates-icon.png">
+        </ion-avatar>
+        <h2>{{speaker.first}}</h2>
+        <p>{{speaker.title}}</p>
+      <!--</button>-->
+      </ion-item>
+    </ion-item-group>
+    <!--add or remove from user's schedule-->
+    <div *ngIf="!session.isCancelled && !session.isWaiting && !session.guest">
+      <div *ngIf="(pending > 0) || session.isScheduled">
+        <div padding>
+        <button ion-button color="light" class="centered" full (click)="toggleMySchedule($event, session)">
+      {{session.isScheduled ? cancel_class : book_class}}
+        </button>
+      </div>
+    </div>
+    </div>
+</ion-content>

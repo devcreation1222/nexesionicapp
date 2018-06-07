@@ -1,0 +1,17 @@
+.page-track-modal {
+    ion-list {
+        ion-item {
+            ion-toggle {
+                .toggle-icon {
+                    background-color: #d8d8d8;
+                }
+                .toggle-checked {
+                    background-color: #d8d8d8;
+                }
+                .toggle-checked .toggle-inner {
+                    background-color: #000 !important;
+                }
+            }
+        }
+    }
+}

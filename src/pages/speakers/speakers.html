@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>MAESTROS</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <!--list of speakers-->
+    <ion-list>
+        <button ion-item *ngFor="let speaker of speakers" [navPush]="speakerDetailPage" [navParams]="{speaker: speaker}">
+      <ion-avatar item-left [hidden]="!online">
+        <img src="{{speaker.image}}">
+      </ion-avatar>
+      <h2>{{speaker.name}}</h2>
+      <p>{{speaker.title}}</p>
+    </button>
+    </ion-list>
+</ion-content>

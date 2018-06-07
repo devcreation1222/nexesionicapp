@@ -1,0 +1,31 @@
+<ion-content class="reset-content" padding>
+    <ion-row class="logo-row">
+        <ion-col></ion-col>
+        <ion-col width-67>
+            <img class="logo" src="assets/images/logo.png" />
+        </ion-col>
+        <ion-col></ion-col>
+    </ion-row>
+    <div class="reset-box">
+        <form (ngSubmit)="reset(registerForm.value)" #registerForm="ngForm">
+            <ion-row>
+                <ion-col style=padding:0px;>
+                    <ion-item class="label">
+                        <ion-label>ESPAI DE MOVIMENT</ion-label>
+                    </ion-item>
+                    <ion-list inset>
+                        <ion-item class="input">
+                            <ion-input type="text" placeholder="{{ 'EMAIL' | translate:param }}" name="email" [(ngModel)]="credentials.email" required></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="signup-col">
+                    <button ion-button class="submit-btn" full type="submit">{{ 'RESTORE' | translate:param }}</button>
+                    <button ion-button class="reset-btn" block clear (click)="back()">{{ 'BACK_LOGIN' | translate:param }}</button>
+                </ion-col>
+            </ion-row>
+        </form>
+    </div>
+</ion-content>

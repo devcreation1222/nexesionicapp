@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <!--side menu-->
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{title}}</ion-title>
+        <!--filter by tracks-->
+        <ion-buttons end [hidden]="showMySchedule">
+            <button ion-button icon-only (click)="openTrackModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <!--the days when the event is happening-->
+    <ion-toolbar class="calendar" no-border-top>
+        <ion-title class="calendar">{{this.selectedMonth}} {{this.selectedYear}}</ion-title>
+        <ion-buttons left>
+            <button ion-button icon-only #button2 (click)="buttonLeftClick(button2)">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+        </ion-buttons>
+
+        <ion-segment class="calendar" style="width:80%; margin-left:10%;">
+            <ion-segment-button value="i" (click)="selectDay(i)" *ngFor="let item of days; let i = index" [class.segment-activated]="i == selectedDay">
+                {{item}}
+            </ion-segment-button>
+        </ion-segment>
+
+        <ion-buttons right>
+            <button ion-button icon-only #button2 (click)="buttonRightClick(button2)">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!--get new data when page is refreshed-->
+    <!-- <ion-refresher (ionRefresh)="refresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+    <ion-item class="centered" [hidden]="!noSessions">
+        <h2>SIN SESIONES</h2>
+    </ion-item>
+    <!--schedule ordered by time-->
+    <ion-item-group *ngFor="let slot of slots">
+        <ion-item-divider color="light" [hidden]="slot.hide">
+            <h2>
+                <b> <ion-icon name="ios-clock-outline"></ion-icon> {{getTime(slot.date)}}</b>
+            </h2>
+        </ion-item-divider>
+        <!--sessions-->
+        <ion-item [ngClass]="{'cancelled': slot.isCancelled, 'waiting' : slot.isWaiting, 'guest': slot.isGuest }" [navPush]="sessionPage" [navParams]="{session: slot, date: slot.date}" [hidden]="slot.hide">
+            <ion-label>
+              <ion-row>
+              <ion-col>
+                <h2>{{slot.title}}</h2>
+                <!--<p>POR <span *ngFor="let speaker of slot.teachers; let isLast=last">{{speaker.name}}{{isLast ? '' : ', '}}</span></p>-->
+                <p>
+                    <ion-icon name="pin"></ion-icon> {{slot.location.name}}
+                </p>
+              </ion-col>
+              <ion-col [hidden]="showMySchedule">
+                <div [ngClass]="(slot.isFreeEntrance)? 'circle-green' : 'circle-red'"></div>
+              </ion-col>
+              </ion-row>
+            </ion-label>
+        </ion-item>
+    </ion-item-group>
+</ion-content>
